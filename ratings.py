@@ -1,9 +1,10 @@
 """Restaurant rating lister."""
 
 """Restaurant name and score"""
-# put your code here
+
 scores = {}
 
+#process file
 file = open('scores.txt')
 
 for line in file:
@@ -19,6 +20,7 @@ scores[restaurant] = rating #add user input to scores dict
 
 file.close()
 
+#sort and print final scores
 sorted__scores = sorted(scores.items()) #sort scores in abc order -> this is a list of tuples (name, rating)
 
 for name, rating in sorted__scores: #print name and rating from sorted_scores
